@@ -35,31 +35,3 @@ Telescope-SQL is a lightweight framework of SQL scripts designed to provision, r
 | 5     | `inventory.sql`  | Populates inventory-type data (like instruments or targets). |
 | 6     | `order.sql`      | Loads observational or process ordering data. |
 | 7     | `morestock.sql`  | Adds supplementary data updates or extensions. |
-
-## 4. Getting Started  
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/taquito22/Telescope-SQL.git
-   cd Telescope-SQL
-Ensure a compatible SQL environment is ready (e.g., PostgreSQL, MySQL, SQLite).
-Execute each script in the defined order. Example (for PostgreSQL):
-\i clear.sql
-\i tables.sql
-\i views.sql
-\i user.sql
-\i inventory.sql
-\i order.sql
-\i morestock.sql
-Verify data structure and content; test user-based access and querying via created views.
-5. Recommendations & Enhancements
-Use Transactions: Wrap each script’s execution in a transaction to ensure atomicity.
-Environment Detection: Add logic to detect SQL dialects and adjust scripts dynamically.
-Idempotence: Modify scripts to be idempotent—safe to re-run without errors.
-Documentation: Annotate each SQL script with comments explaining tables, views, and logic.
-Automation: Create a shell or Makefile script to automate the run order for easier maintenance.
-6. Future Ideas
-Python or CLI wrapper to orchestrate the pipeline automatically.
-Version control tracking for schema changes over time.
-Extended user management script supporting fine-grained access.
-Sample query repository (e.g., commonly executed telescope queries).
-
