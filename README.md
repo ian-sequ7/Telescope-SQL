@@ -62,3 +62,4 @@ Python or CLI wrapper to orchestrate the pipeline automatically.
 Version control tracking for schema changes over time.
 Extended user management script supporting fine-grained access.
 Sample query repository (e.g., commonly executed telescope queries).
+
